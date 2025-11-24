@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-screen">
+        <h1>faad branch welcomes you</h1>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div id="username-screen" class="hidden">
+        <input type="text" id="username-input" placeholder="Enter your username">
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div class="nintendo-switch">
+            <div class="left-controls">
+                <div class="control-pad">
+                    <button id="left-button">L</button>
+                    <button id="right-button">R</button>
+                </div>
+            </div>
+            <div class="screen">
+                <canvas id="tetris-canvas"></canvas>
+                <div id="game-info">
+                    <p>Score: <span id="score">0</span></p>
+                    <p>Level: <span id="level">1</span></p>
+                    <p>User: <span id="username-display"></span></p>
+                </div>
+                <div id="watermark">by RANSA</div>
+            </div>
+            <div class="right-controls">
+                <div class="control-pad">
+                    <button id="rotate-button">A</button>
+                    <button id="drop-button">B</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="hidden">
+        <div id="popup-content">
+            <h2 id="popup-message"></h2>
+            <button id="try-again-button" class="hidden">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
